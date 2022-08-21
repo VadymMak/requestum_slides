@@ -1,0 +1,7 @@
+.layout {
+    display: flex;
+    width: 30%;
+    height:calc(100vh - 8rem);
+    padding-top: 4rem;
+    background: linear-gradient(345.29deg, #2F2D2D 59.78%, #4F4E50 103.78%);
+}
