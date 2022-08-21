@@ -6,12 +6,15 @@ import App from "./App";
 import "./styles/main.scss";
 
 import { BrowserRouter } from "react-router-dom";
+import { NavbarContextProvider } from "./context/NavbarContext";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <NavbarContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </NavbarContextProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

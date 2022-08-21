@@ -1,21 +1,38 @@
 import React from "react";
+import { sideMenuTitles } from "../../constants/nav-titles";
+import VerticalLine from "../../assets/components/VerticalLine";
 
 import { Link } from "react-router-dom";
+import { useNavbarContext } from "../../hooks/useNavbarContext";
 
 const Navbar = () => {
+  const [, setNavId] = useNavbarContext();
+
   return (
     <header className="navbar">
-      <nav className="navbar__nav">
-        <ul className="navbar__nav-items">
-          <li className="navbar__nav-item">
-            <Link to="/">pre-sale estimate</Link>
-          </li>
-          <li className="navbar__nav-item">
-            <Link to="/discovery">discovery phase</Link>
-          </li>
-          <li className="navbar__nav-item">
-            <Link to="/accurate">accurate estimate</Link>
-          </li>
+      <nav className="navbar-nav">
+        <ul className="navbar-nav__items">
+          {sideMenuTitles &&
+            sideMenuTitles.map((item) => {
+              return (
+                <li key={item.id} className="navbar-nav__item">
+                  <div
+                    className="navbar-nav__items-container"
+                    onClick={() => setNavId(item.id)}
+                  >
+                    <Link to="/">
+                      <div className="navbar-nav__item-id">
+                        <span>{item.id}</span>
+                      </div>
+                      <span className="navbar-nav__item-title">
+                        {item.title}
+                      </span>
+                    </Link>
+                    {item.id !== 3 && <VerticalLine />}
+                  </div>
+                </li>
+              );
+            })}
         </ul>
       </nav>
     </header>
