@@ -1,7 +1,12 @@
+@import "./utils/_normalize.scss";
+@import "./utils/_container.scss";
+
 @import "./blocks/top-bar.scss";
 @import "./blocks/navbar.scss";
 @import "./blocks/right-bar.scss";
 @import "./blocks/right-bar.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/layout.scss";
-@import "./blocks/presale-estimate.scss";
+@import "./blocks/mind-map.scss";
+@import "./blocks/feature.scss";
+@import "./blocks/rough-estimate-navbar.scss";

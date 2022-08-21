@@ -1,0 +1,192 @@
+.mind-map {
+    overflow: auto;
+    &__title {
+        padding: 40px 0 16px 44px;
+        & span{
+        font-size: 24px;
+
+    }
+    }
+    .section {
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 1fr;
+        margin-bottom: 51px;
+        padding-left: 153px;
+
+        & > div {
+            width: 215px;
+        }
+
+        &__sub:nth-child(1) {
+            background: #ffe7f0;
+            border: 1px solid #f11869;
+            border-radius: 2.29px;
+            color: #f11869;
+        
+        }
+
+        &__sub:nth-child(3) {
+            // margin-left: 140px;
+            background: #e6f8f0;
+            border: 1px solid #06bc65;
+            border-radius: 2.29px;
+            color: #06bc65;
+        }
+
+        &__sub:nth-child(2) {
+            background: #edf2fe;
+            border: 1px solid #4675d3;
+            border-radius: 2.29px;
+            color: #4675d3;
+        }
+
+        &__sub span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 215px;
+            height: 51.7px;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 27px;
+            
+        }
+
+        &:nth-child(1) {
+            background: #ffe7f0;
+        }
+    
+    }
+
+    &__diagram {
+        &-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 88px;
+
+            & span {
+                width: 315px;
+                height: 49px;
+                background: #f11869;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 30px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    .blocks {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 3fr 1fr;
+        column-gap: 2%;
+        // display: flex;
+        // justify-content: space-between;
+        margin-bottom: 50px;
+        
+        padding: 0 69.5px;
+
+        &__block {
+            height: 400px;
+            display: flex;
+            justify-content: space-between;
+
+            &-subblocks {
+                width: 168px;
+
+                & span {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                & p {
+                    text-align: center;
+                }
+            }
+
+            &-subblock {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 24px;
+            }
+        }
+    }
+   
+}
+.slide {
+    &-title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 88px;
+
+        & span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 315px;
+            height: 49px;
+            font-size: 20px;
+            background: #f11869;
+            color: #fff;
+            border-radius: 4px;
+        }
+    }
+
+    &-content {
+        width: 100%;
+        height: 500px;
+        display: grid;
+        grid-template-columns: 0.65fr 1fr 0.42fr;
+
+        &__section {
+            display: flex;
+            flex-direction: column;
+
+            &-header  {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 60px;
+
+                & span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+
+            &-content {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .row-block {
+                &__first {
+                    width: 168px;
+                    height: 300px;
+                }
+                &__second {
+                    width: 168px;
+                    height: 300px;
+                }
+                &__third {
+                    width: 168px;
+                    height: 300px;
+                }
+            }
+        }
+    }
+
+   
+}
+
