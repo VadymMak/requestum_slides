@@ -1,0 +1,107 @@
+.feature {
+    overflow: scroll;
+    &-title {
+        margin-left: 36px;
+        margin-top: 36px;
+            span {
+                display: block;
+                font-size: 24px;
+                padding-bottom: 12px;
+            }
+    }
+
+    &-table {
+        width: 94%;
+        margin-left: 36px;
+        border-spacing: 0;
+
+        &__head {
+            background: #e41160;
+            height: 30px;
+
+            &-row {
+                padding: 0;
+                color: #fff;
+                text-align: left;
+            }
+
+            &-row:nth-child(1) {
+                width: 25%;
+                padding-left: 30px;
+            }
+            &-row:nth-child(2) {
+                width: 46%;
+            }
+        }
+
+        &__body {
+            background: #fefefe;
+            box-shadow: inset 0px -0.8px 0px rgba(209, 209, 209, 0.3);
+            &-head {
+                font-size: 13px;
+                height: 34px;
+            }
+
+           
+            
+        }
+    }
+}
+.button-close {
+    width: 20px;
+    height: 20px;
+    background: #f11869;
+
+    & span {
+        position: relative;
+        display: block;
+            &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 12px;
+                top: 9px;
+                left: 4px;
+                height: 2px;
+                background: #fff;
+            }
+
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+
+.button-open {
+    // display: none;
+    width: 20px;
+    height: 20px;
+    background: #f11869;
+
+    & span {
+        position: relative;
+        display: block;
+            &:before,
+            &:after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 12px;
+                top: 9px;
+                left: 4px;
+                height: 2px;
+                background: #fff;
+            }
+
+            &:after {
+                transform: rotate(90deg);
+            }
+
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
