@@ -1,30 +1,79 @@
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { Link } from "react-router-dom";
-import FeatureListIcon from "../../assets/icon-components/FeatureListIcon";
-import MindMapIcon from "../../assets/icon-components/MindMapIcon";
-import RoughEstimateIcon from "../../assets/icon-components/RoughEstimateIcon";
-import DesignesIcon from "../../assets/icon-components/DesignesIcon";
-import SpecificationIcon from "../../assets/icon-components/SpecificationIcon";
-import AccurateEstimateIcon from "../../assets/icon-components/AccurateEstimateIcon";
-import DevelopmentPlanIcon from "../../assets/icon-components/DevelopmentPlanIcon";
+
+import { useNavbarContext } from "../../hooks/useNavbarContext";
+import { useIconContext } from "../../hooks/useIconContext";
+import {
+  sideMenuTitles,
+  presaleEstimateTitles,
+  discoveryPhaseTitles,
+  accurateEstimateTitles,
+} from "../../constants/nav-titles";
 
 const TopBar = () => {
+  const [navId] = useNavbarContext();
+  const [topBarTiltes, setTopBarTitles] = useState([]);
+  const [isActive, setIsActive] = useState("mind-");
+
+  const handleMenuClick = useCallback((event) => {
+    setIsActive(event.split("/")[1]);
+  }, []);
+
+  useEffect(() => {
+    switch (navId) {
+      case 1:
+        setTopBarTitles(presaleEstimateTitles);
+        setIsActive("mind-map");
+        break;
+      case 2:
+        setTopBarTitles(discoveryPhaseTitles);
+        setIsActive("designes");
+        break;
+      case 3:
+        setTopBarTitles(accurateEstimateTitles);
+        setIsActive("accurate-estimate");
+        break;
+      default:
+        console.log("Something wrong");
+    }
+  }, [navId]);
+
   return (
     <header className="top-navbar">
-      <div className="top-nav__title">
-        <span>1. Presale Estimate</span>
+      <div className="top-navbar__title">
+        {sideMenuTitles.map(
+          (item) =>
+            item.id === navId && (
+              <span key={item.id}>
+                {item.id}. {item.title}
+              </span>
+            )
+        )}
       </div>
       <nav className="top-navbar__nav">
         <ul className="top-navbar__nav-items">
-          <li className="top-navbar__nav-item">
-            <Link to="/">
-              <DevelopmentPlanIcon />
-              Top Home
-            </Link>
-          </li>
-          <li className="top-navbar__nav-item">
-            <Link to="/login">Top Login</Link>
-          </li>
+          {topBarTiltes &&
+            topBarTiltes.map((item) => {
+              return (
+                <li className="top-navbar__nav-item" key={item.id}>
+                  <Link
+                    to={item.url}
+                    onClick={() => {
+                      return handleMenuClick(item.url);
+                    }}
+                  >
+                    <div
+                      className={
+                        isActive === item.url.split("/")[1] ? "active" : null
+                      }
+                    >
+                      {item.component}
+                      <span>{item.title}</span>
+                    </div>
+                  </Link>
+                </li>
+              );
+            })}
         </ul>
       </nav>
     </header>

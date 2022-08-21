@@ -7,5 +7,6 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100nh;
     background: linear-gradient(345.29deg, #2F2D2D 59.78%, #4F4E50 103.78%);
 }

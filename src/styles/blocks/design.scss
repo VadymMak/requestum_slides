@@ -1,0 +1,82 @@
+.design {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-table {
+        width: 95%;
+        // height: 60%;
+        padding-top: 65px;
+
+        & img {
+            width: 100%;
+            object-fit: fit;
+        }
+
+        @media(max-width: 1500px) {
+            top: 60px;
+       }
+
+       @media(max-width: 1400px) {
+           top: 60px
+       }
+
+       @media(max-width: 1400px) {
+           top: 40%
+       }
+
+       @media(max-width: 1300px) {
+           padding-top: 55px;
+       }
+    }
+
+    &-footer {
+        width: 95%;
+        margin-top: 34px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        
+        &__slide {
+            position: relative;
+            width: 50%;
+            padding-bottom: 34px;
+            display: flex;
+            justify-content: left;
+
+            &-one {
+                position: absolute;
+                width: 65%;
+                height: 24%;
+               
+                top: 5%;
+                left: 25%;
+                 & img {
+                    width: 100%;
+                    object-fit: contain;
+                 }
+            }
+
+            &-two {
+                position: absolute;
+                width: 65%;
+                height: 24%;
+               
+                top: 5%;
+                left: 1%;
+                 & img {
+                    width: 100%;
+                    object-fit: contain;
+                 }
+            }
+
+            & img {
+                width: 100%;
+                object-fit: fit;
+            }
+        }
+    }
+
+
+}

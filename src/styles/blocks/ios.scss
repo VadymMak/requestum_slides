@@ -1,0 +1,30 @@
+.ios {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-table {
+        width: 95%;
+        height: 60%;
+        margin: 0;
+        padding: 0;
+
+        & img {
+            width: 100%;
+            object-fit: fit;
+        }
+    }
+
+    &-footer {
+        width: 95%;
+        height: 60%;
+        margin: 20px;
+        padding: 0;
+
+        & img {
+            width: 100%;
+            object-fit: fit;
+        }
+    }
+}
