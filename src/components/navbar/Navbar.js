@@ -1,4 +1,4 @@
-import React, { useEffect, memo } from "react";
+import React, { memo } from "react";
 import { sideMenuTitles } from "../../constants/nav-titles";
 import VerticalLine from "../../assets/components/VerticalLine";
 

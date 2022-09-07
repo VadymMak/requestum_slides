@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 import { useNavbarContext } from "../../hooks/useNavbarContext";
-import { useIconContext } from "../../hooks/useIconContext";
 import {
   sideMenuTitles,
   presaleEstimateTitles,

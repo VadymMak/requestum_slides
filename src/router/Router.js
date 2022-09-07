@@ -41,6 +41,7 @@ export const Router = () => {
       <Route path="/accurate-estimate" element={<AccurateEstimate />} />
       <Route path="/development-plan" element={<DevelopmentPlan />} />
       <Route path="/design/*" element={<Design />} />
+      <Route path="/rough-estimate/Design/*" element={<Design />} />
       <Route path="/rough-estimate/frontend/*" element={<FrontEnd />} />
       <Route path="/rough-estimate/ios/*" element={<Ios />} />
       <Route path="/rough-estimate/android/*" element={<Android />} />

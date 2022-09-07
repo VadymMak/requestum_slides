@@ -1,0 +1,23 @@
+.design-table {
+    height: 40%;
+}
+
+.design-footer {
+    display: flex;
+    width: 90%;
+    height: 50%;
+    padding-left: 40px;
+
+    &__right {
+        width: 50%;
+        height: 90%;
+        background: #e5f5f1;
+    }
+
+    &__left {
+        width: 50%;
+        height: 90%;
+        background: #f6f8fb;
+       
+    }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 
-import Slide from "../../assets/Group 1321314499.jpg";
+import Slide from "../../assets/images/Group 1321314499.jpg";
 
 const MindMap = () => {
   return (
