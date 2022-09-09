@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/requestum_slides/static/css/main.ddd41a47.css",
-    "main.js": "/requestum_slides/static/js/main.c60f45c7.js",
+    "main.css": "/requestum_slides/static/css/main.38ea8f68.css",
+    "main.js": "/requestum_slides/static/js/main.02035b15.js",
     "static/media/Group 1321314499.jpg": "/requestum_slides/static/media/Group 1321314499.0f100374d9d5d7374922.jpg",
+    "static/media/Spreadsheet Example.jpg": "/requestum_slides/static/media/Spreadsheet Example.e89f8c6688d819f7b0c0.jpg",
+    "static/media/Mask group_2_upd.jpg": "/requestum_slides/static/media/Mask group_2_upd.e89da52c5d0e1c061ebb.jpg",
+    "static/media/Mask group_1_upd.jpg": "/requestum_slides/static/media/Mask group_1_upd.d4109b4334fc4d20ef9c.jpg",
     "index.html": "/requestum_slides/index.html",
-    "main.ddd41a47.css.map": "/requestum_slides/static/css/main.ddd41a47.css.map",
-    "main.c60f45c7.js.map": "/requestum_slides/static/js/main.c60f45c7.js.map"
+    "main.38ea8f68.css.map": "/requestum_slides/static/css/main.38ea8f68.css.map",
+    "main.02035b15.js.map": "/requestum_slides/static/js/main.02035b15.js.map"
   },
   "entrypoints": [
-    "static/css/main.ddd41a47.css",
-    "static/js/main.c60f45c7.js"
+    "static/css/main.38ea8f68.css",
+    "static/js/main.02035b15.js"
   ]
 }
