@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/requestum_slides/static/css/main.9535c377.css",
-    "main.js": "/requestum_slides/static/js/main.d21759e6.js",
+    "main.css": "/requestum_slides/static/css/main.b1490e7e.css",
+    "main.js": "/requestum_slides/static/js/main.0f8c3011.js",
     "static/media/FrontendFooter.jpg": "/requestum_slides/static/media/FrontendFooter.210941479f68e82f3e9e.jpg",
+    "static/media/AndroidFooter.jpg": "/requestum_slides/static/media/AndroidFooter.ca8f2beee5b5b3e2137f.jpg",
     "static/media/IosFooter.jpg": "/requestum_slides/static/media/IosFooter.38464380312352a3bc13.jpg",
     "static/media/Group 1321314499.jpg": "/requestum_slides/static/media/Group 1321314499.0f100374d9d5d7374922.jpg",
     "static/media/FrontEndSpredsheet.jpg": "/requestum_slides/static/media/FrontEndSpredsheet.255b3031672df6e3ef22.jpg",
@@ -10,11 +11,11 @@
     "static/media/Mask group_2_upd.jpg": "/requestum_slides/static/media/Mask group_2_upd.e89da52c5d0e1c061ebb.jpg",
     "static/media/Mask group_1_upd.jpg": "/requestum_slides/static/media/Mask group_1_upd.d4109b4334fc4d20ef9c.jpg",
     "index.html": "/requestum_slides/index.html",
-    "main.9535c377.css.map": "/requestum_slides/static/css/main.9535c377.css.map",
-    "main.d21759e6.js.map": "/requestum_slides/static/js/main.d21759e6.js.map"
+    "main.b1490e7e.css.map": "/requestum_slides/static/css/main.b1490e7e.css.map",
+    "main.0f8c3011.js.map": "/requestum_slides/static/js/main.0f8c3011.js.map"
   },
   "entrypoints": [
-    "static/css/main.9535c377.css",
-    "static/js/main.d21759e6.js"
+    "static/css/main.b1490e7e.css",
+    "static/js/main.0f8c3011.js"
   ]
 }
